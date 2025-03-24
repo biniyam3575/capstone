@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+}
+p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top-container{
+    background-image: url('./image/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100%; 
+    
+    display: flex-block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 100px ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    color: rgb(252, 94, 27);
+
+}
+.middle-container{
+   
+    display: flex-block;
+    font-size: 24px;
+    text-align: center;
+    padding: 60px;
+    width: 100%; 
+
+}
+.middle-container > img{
+    border-radius: 50%;
+}
+.bottom-container{
+    display: flex-block;
+    font-size: 24px;
+    text-align: center;
+    padding: 60px;
+    width: 100%; 
+}
+button{
+    background-color: rgb(56, 231, 56);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.gradient-background {
+    background: linear-gradient(300deg, hsl(206, 76%, 51%), #3e4fec, #d013ff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    margin: 0%;
+  }
+.skill{
+    display: flex-block;
+    text-align: center;
+    margin: 50px;  
+}
+.my-skill{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.skill img{
+    margin: 10px;
+}
+@media(max-width: 680px){
+    p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    span{
+        color: rgb(247, 64, 247);
+    }
+}
+
+
+
+
