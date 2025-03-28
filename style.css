@@ -1,13 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: sans-serif;
 }
-p{
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 .top-container{
-    background-image: url('./image/background.jpg'); 
+    background-image: url('./image/background2.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,28 +20,55 @@ p{
     font-size: 24px;
     text-align: center;
     padding: 100px ;
+    margin-bottom: 0px;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-span{
-    color: rgb(252, 94, 27);
 
-}
-.middle-container{
+.middle-container {
+  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 0px;
+    width: 50%; 
+    margin: 0 auto; 
+    margin-left: 20%; 
+    margin-top: 80px;
    
-    display: flex-block;
-    font-size: 24px;
-    text-align: center;
-    padding: 60px;
-    width: 100%; 
+  }
+  .middle-container h2{
+    font-family: cursive;
+    margin-bottom: 10px;
+  }
 
-}
 .middle-container > img{
     border-radius: 50%;
+    margin-bottom: 10px;
 }
+
+.skill{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 0px;
+    width: 50%; 
+    margin: 0 auto; 
+    margin-left: 20%; 
+    margin-right: 40%;
+    margin-top: 80px;
+}
+
+.my-skill{
+    text-align: center;
+    font-size: 40px;
+    font-family:cursive;
+}
+.skill img{
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
 .bottom-container{
     display: flex-block;
     font-size: 24px;
@@ -70,26 +98,18 @@ button{
     animation: gradient-animation 18s ease infinite;
     margin: 0%;
   }
-.skill{
-    display: flex-block;
-    text-align: center;
-    margin: 50px;  
-}
-.my-skill{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.skill img{
-    margin: 10px;
-}
+
 @media(max-width: 680px){
-    p{
-        margin-left: 20px;
-        margin-right: 20px;
+    .middle-container{
+        width: 75%;
+        margin-left: 10%;
     }
-    span{
-        color: rgb(247, 64, 247);
+    .skill{
+        width: 75%;
+        margin-left: 10%;
+    }
+    .my-skill{
+        font-size: 30px;
     }
 }
 
